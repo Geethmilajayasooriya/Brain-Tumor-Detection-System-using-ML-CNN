@@ -1,152 +1,140 @@
-🧠 Brain Tumor Detection System using Machine Learning & Deep Learning
- 
- Project Overview
-This project presents an end-to-end Brain Tumor Detection System that classifies MRI brain images as Tumor Present or No Tumor.
-The system compares traditional machine learning models with deep learning (CNN & transfer learning) to identify the most accurate approach.
+# 🧠 Brain Tumor Detection System
 
-The entire pipeline is implemented without OpenCV, using PIL for image processing, making it lightweight and easy to run.
+### Using Machine Learning & Deep Learning
 
- Objectives
+## 📌 Project Overview
 
-Detect brain tumors from MRI images accurately
+This project implements a **complete Brain Tumor Detection System** that classifies MRI brain images into **Tumor Present** and **No Tumor** categories.
 
-Compare multiple ML and DL models
+Both **traditional Machine Learning models** and **Deep Learning models (CNN & Transfer Learning)** are trained, evaluated, and compared to identify the **best-performing approach** for medical image classification.
 
-Evaluate models using standard performance metrics
+The system is developed **without OpenCV**, using **PIL (Python Imaging Library)** for image preprocessing, making it lightweight and easy to execute.
 
-Automatically select and save the best-performing model
+---
 
+## 🎯 Objectives
 
-🛠️ Technologies Used
+* Accurately detect brain tumors from MRI images
+* Compare Machine Learning and Deep Learning techniques
+* Evaluate models using standard performance metrics
+* Automatically select and save the best-performing model
 
-Programming Language: Python
+---
 
-Libraries & Frameworks:
+## 🛠️ Technologies Used
 
-NumPy, Pandas
+**Programming Language**
 
-Matplotlib, Seaborn
+* Python
 
-Scikit-learn
+**Libraries & Frameworks**
 
-TensorFlow / Keras
+* NumPy, Pandas
+* Matplotlib, Seaborn
+* Scikit-learn
+* TensorFlow / Keras
+* PIL (Python Imaging Library)
 
-PIL (Python Imaging Library)
+**Development Environment**
 
-Development Environment: Jupyter Notebook / Python
+* Jupyter Notebook / Python
 
+---
 
-📂 Dataset Description
+## 📂 Dataset Description
 
-MRI brain images stored in a local folder
+* MRI brain images stored in a local dataset folder
+* Images are categorized into:
 
-Images are classified into two categories:
+  * **Yes** – Tumor Present
+  * **No** – No Tumor
+* Class labels are automatically extracted from image file names
 
-Yes → Tumor Present
+---
 
-No → No Tumor
+## 🔄 System Workflow
 
-Labels are automatically extracted from image file names
+1. Load MRI images using PIL
+2. Resize and normalize image data
+3. Perform Exploratory Data Analysis (EDA)
+4. Split dataset into training and testing sets
+5. Train multiple Machine Learning models
+6. Train Deep Learning CNN models
+7. Evaluate and compare all models
+8. Select and save the best-performing model
 
+---
 
-🔄 System Workflow
+## 🤖 Machine Learning Models Implemented
 
-Load MRI images using PIL
+* Random Forest
+* Support Vector Machine (SVM)
+* K-Nearest Neighbors (KNN)
+* Gradient Boosting
+* Decision Tree
+* Naive Bayes
 
-Resize and normalize images
+---
 
-Perform Exploratory Data Analysis (EDA)
+## 🧠 Deep Learning Models Implemented
 
-Split data into training and testing sets
+* Custom Convolutional Neural Network (CNN)
+* VGG16 Transfer Learning Model
 
-Train multiple Machine Learning models
+---
 
-Train Deep Learning CNN models
+## 📊 Model Evaluation Metrics
 
-Compare models using performance metrics
+* Accuracy
+* Precision
+* Recall
+* F1-Score
+* Confusion Matrix
+* ROC Curve
 
-Select and save the best model
+---
 
+## 🏆 Best Model Selection
 
-🤖 Machine Learning Models Implemented
+All models are compared using **Accuracy and F1-Score**.
+The model with the highest performance is automatically identified and saved.
 
-Random Forest
+* Machine Learning models are saved as `.pkl` files
+* Deep Learning models are saved as `.h5` files
+* Label encoder is saved for future inference
 
-Support Vector Machine (SVM)
+---
 
-K-Nearest Neighbors (KNN)
+## 💾 Saved Outputs
 
-Gradient Boosting
+* Best-trained classification model
+* Label encoder
+* Performance comparison visualizations
 
-Decision Tree
+---
 
-Naive Bayes
+## 🚀 How to Run the Project
 
+1. Clone the repository
+2. Place the dataset folder in the project directory
+3. Install required dependencies
+4. Run the notebook or Python script
 
-🧠 Deep Learning Models Implemented
-
-Custom CNN Model
-
-VGG16 Transfer Learning Model
-
-
-📊 Model Evaluation Metrics
-
-Accuracy
-
-Precision
-
-Recall
-
-F1-Score
-
-Confusion Matrix
-
-ROC Curve
-
-
-🏆 Best Model Selection
-
-All models are compared based on accuracy and F1-score.
-The best-performing model is automatically identified and saved for future use.
-
-ML models are saved as .pkl files
-
-Deep Learning models are saved as .h5 files
-
-Label encoder is saved for inference
-
-
-💾 Saved Outputs
-
-Trained best model
-
-Label encoder
-
-Performance comparison visualizations
-
-
-🚀 How to Run the Project
-
-Clone the repository
-
-Place the dataset folder in the project directory
-
-Install required libraries
-
-Run the notebook or Python file
-
+```bash
 pip install -r requirements.txt
+```
+
+---
+
+## ⭐ Project Highlights
+
+* No OpenCV dependency
+* Complete ML vs DL model comparison
+* Modular and well-structured code
+* Suitable for medical image classification research
+* Beginner-friendly and well-documented implementation
+
+---
 
 
-📈 Project Highlights
 
-No OpenCV dependency
-
-Complete ML & DL comparison in one project
-
-Clean modular code structure
-
-Suitable for medical image classification research
-
-Beginner-friendly and well-documented
